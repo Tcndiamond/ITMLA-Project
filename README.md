@@ -6,14 +6,10 @@ System Diagram Structure Based on Question 3
    - **Image Enhancement**: Enhance the acquired images to improve their quality and make the features more distinguishable. This can include techniques like:
      - Histogram equalization to improve contrast.
      - Gaussian or median filtering to reduce noise.
-     - Morphological operations to remove small imperfections.
    - **Normalization**: Normalize the pixel values to a common scale to ensure consistent feature representation.
 
 3. **Feature Extraction**:
-   - Identify relevant features from the preprocessed images that can effectively discriminate between defective and defectless concrete blocks. This can include:
-     - Color features: Mean, standard deviation, histograms of color channels.
-     - Texture features: Haralick features, Gabor filters, Local Binary Patterns (LBP).
-     - Shape features: Contour-based features, moments.
+   - Identify relevant features from the preprocessed images that can effectively discriminate between defective and defectless concrete blocks. 
    - Extract these features from the preprocessed images.
 
 4. **Train-Test Split**:
