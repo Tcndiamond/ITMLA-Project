@@ -6,7 +6,6 @@ System Diagram Structure Based on Question 3
    - **Image Enhancement**: Enhance the acquired images to improve their quality and make the features more distinguishable. This can include techniques like:
      - Histogram equalization to improve contrast.
      - Gaussian or median filtering to reduce noise.
-     - Morphological operations to remove small imperfections.
    - **Normalization**: Normalize the pixel values to a common scale to ensure consistent feature representation.
 
 3. **Feature Extraction**:
