@@ -22,4 +22,5 @@ System Diagram Structure Based on Question 3
 
 6. **Classifier Testing**:
    - Evaluate the trained classifier on the testing dataset to assess its performance.
-   - Calculate performance metrics such as accuracy, precision, recall, and F1-score to quantify the model's effectiveness in classifying defective and defectless concrete blocks.
+   - Calculate performance metrics how the model can differentiate between defective and defectless concrete blocks.
+
