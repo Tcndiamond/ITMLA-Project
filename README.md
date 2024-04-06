@@ -1,4 +1,5 @@
 Explanation and Justification:
+
 Image Acquisition:
    - Acquire images of concrete blocks using the RGB camera system.
 
