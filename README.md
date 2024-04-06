@@ -1,26 +1,25 @@
-System Diagram Structure Based on Question 3
+Explanation and Justification:
+Image Acquisition:
+   - Acquire images of concrete blocks using the RGB camera system.
 
-1. **Image Acquisition**: Acquire images of concrete blocks using the RGB camera system.
+Load Images:
+   - Load images from the specified folders for both defective and defectless concrete cracks.
 
-2. **Image Preprocessing**:
-   - **Image Enhancement**: Enhance the acquired images to improve their quality and make the features more distinguishable. This can include techniques like:
-     - Histogram equalization to improve contrast.
-     - Gaussian or median filtering to reduce noise.
-   - **Normalization**: Normalize the pixel values to a common scale to ensure consistent feature representation.
+Image Prepocessing & Enhancement:
+   - Enhance the images to improve their quality and highlight important features. In the provided code, histogram equalization and Gaussian filtering are applied.
+   - These enhancements help in improving the contrast and reducing noise in the images, which can make subsequent feature extraction more effective.
+   - Normalization: Normalize the pixel values to a common scale to ensure consistent feature representation.
 
-3. **Feature Extraction**:
-   - Identify relevant features from the preprocessed images that can effectively discriminate between defective and defectless concrete blocks. 
-   - Extract these features from the preprocessed images.
+Feature Extraction:
+   - Extract features from the enhanced images. In the code, Histogram of Oriented Gradients (HOG) features are extracted.
+   - HOG is widely used for object detection in computer vision tasks and is particularly effective for detecting object shapes and textures. It captures the distribution of gradient orientations in localized portions of an image.
 
-4. **Train-Test Split**:
-   - Split the dataset into training and testing sets to evaluate the performance of the model. This ensures the model's generalization to unseen data.
+Data Splitting:
+   - Split the dataset into training and testing sets. This ensures that the model's performance can be evaluated on unseen data.
 
-5. **Classifier Training**:
-   - Choose a suitable classification algorithm based on the nature of the problem (binary classification of images).
-   - The classifier we are using is the random forest classifier
-   - Train the selected classifier using the training dataset and the extracted features.
+Training Classifier:
+   - Train a classifier using the extracted features and their corresponding labels. In the code, a Random Forest Classifier is used.
+   - Random Forests are capable of handling high-dimensional data and are robust to overfitting. The n_estimators parameter controls the number of trees in the forest.
 
-6. **Classifier Testing**:
-   - Evaluate the trained classifier on the testing dataset to assess its performance.
-   - Calculate performance metrics how the model can differentiate between defective and defectless concrete blocks.
-
+Testing Classifier:
+   - Test the trained classifier on the testing dataset to evaluate its performance. 
