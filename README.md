@@ -53,4 +53,17 @@ The notebook currently uses local dataset paths and requires adjustments before 
 
 ## What I Learned
 
-[Explain what you personally learned about image preprocessing, feature extraction, model training, and evaluating predictions.]
+## What I Learned
+
+Through this project, I gained practical experience in applying machine learning and image processing techniques to solve real-world problems.
+
+Some of the key things I learned include:
+
+- **Image Preprocessing:** I learned how to use histogram equalisation and Gaussian filtering to improve image quality, enhance important features, and reduce noise.
+- **Data Preparation:** I developed a better understanding of image normalisation and why preparing data correctly is important for machine learning.
+- **Feature Extraction:** I explored how Histogram of Oriented Gradients (HOG) can extract useful information about edges, shapes, and textures from images.
+- **Machine Learning:** I gained experience working with a Random Forest classifier and understanding how models learn to distinguish between different categories of images.
+- **Model Evaluation:** I learned the importance of separating training and testing data to assess how well a model can make predictions on unseen images.
+- **Problem-Solving:** I strengthened my Python programming and analytical thinking skills by working through the different stages of an image classification project.
+
+Overall, this project helped me understand how different image processing and machine learning techniques work together to turn raw image data into useful information. It also strengthened my interest in artificial intelligence, computer vision, and developing intelligent systems that can solve practical problems.
