@@ -1,26 +1,56 @@
-Explanation and Justification:
 
-Image Acquisition:
-   - Acquire images of concrete blocks using the RGB camera system.
+# Concrete Crack Detection Using Machine Learning
 
-Load Images:
-   - Load images from the specified folders for both defective and defectless concrete cracks.
+## Project Overview
 
-Image Prepocessing & Enhancement:
-   - Enhance the images to improve their quality and highlight important features. In the provided code, histogram equalization and Gaussian filtering are applied.
-   - These enhancements help in improving the contrast and reducing noise in the images, which can make subsequent feature extraction more effective.
-   - Normalization: Normalize the pixel values to a common scale to ensure consistent feature representation.
+This academic project explores how image processing and machine learning can be used to distinguish between concrete surfaces with cracks and those without cracks.
 
-Feature Extraction:
-   - Extract features from the enhanced images. In the code, Histogram of Oriented Gradients (HOG) features are extracted.
-   - HOG is widely used for object detection in computer vision tasks and is particularly effective for detecting object shapes and textures. It captures the distribution of gradient orientations in localized portions of an image.
+The project applies image enhancement, feature extraction, and a Random Forest classifier to image data.
 
-Data Splitting:
-   - Split the dataset into training and testing sets. This ensures that the model's performance can be evaluated on unseen data.
+## Technologies Used
 
-Training Classifier:
-   - Train a classifier using the extracted features and their corresponding labels. In the code, a Random Forest Classifier is used.
-   - Random Forests are capable of handling high-dimensional data and are robust to overfitting. The n_estimators parameter controls the number of trees in the forest.
+- Python
+- OpenCV
+- NumPy
+- Scikit-learn
+- Scikit-image
+- Matplotlib
+- Jupyter Notebook
 
-Testing Classifier:
-   - Test the trained classifier on the testing dataset to evaluate its performance. 
+## Methodology
+
+### 1. Image Loading
+Images are loaded from two categories:
+- Defective concrete
+- Defect-free concrete
+
+### 2. Image Preprocessing
+Histogram equalisation improves image contrast, while Gaussian filtering reduces noise.
+
+### 3. Image Normalisation
+Pixel values are normalised to prepare the images for feature extraction.
+
+### 4. Feature Extraction
+Histogram of Oriented Gradients (HOG) is used to capture image features relating to edges, shapes, and textures.
+
+### 5. Model Development
+The project uses a Random Forest classifier with 100 estimators.
+
+An 80/20 training and testing split is specified in the notebook.
+
+## Project Results
+
+[Add verified results from your original project, including accuracy, precision, recall, or other findings.]
+
+## Project Files
+
+- `Question 3.ipynb` — Python implementation
+- `ITMLA3-B11 Project.pdf` — Academic project document
+
+## Reproducibility
+
+The notebook currently uses local dataset paths and requires adjustments before it can run on another computer.
+
+## What I Learned
+
+[Explain what you personally learned about image preprocessing, feature extraction, model training, and evaluating predictions.]
